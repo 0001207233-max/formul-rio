@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+      <form action="#" method="POST">
+        <h2>Pesquisa de Satisfação</h2>
+
+        <!-- Nome -->
+        <div class="campo">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+
+        <!-- Idade -->
+        <div class="campo">
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" min="0" max="120" required>
+        </div>
+
+        <!-- Nota de 0 a 10 -->
+        <div class="campo">
+            <label for="nota">Nota (0 a 10):</label>
+            <input type="number" id="nota" name="nota" min="0" max="10" required>
+        </div>
+
+        <!-- Radio Buttons (Avaliação Geral) -->
+        <div class="campo">
+            <label>Avaliação Geral:</label>
+            <div class="grupo-opcao">
+                <label class="opcao-item"><input type="radio" name="avaliacao" value="excelente" required> Excelente</label>
+                <label class="opcao-item"><input type="radio" name="avaliacao" value="bom"> Bom</label>
+                <label class="opcao-item"><input type="radio" name="avaliacao" value="regular"> Regular</label>
+                <label class="opcao-item"><input type="radio" name="avaliacao" value="ruim"> Ruim</label>
+            </div>
+        </div>
+
+        <!-- Checkboxes (Pontos Fortes) -->
+        <div class="campo">
+            <label>O que você mais gostou? (Selecione quantos desejar):</label>
+            <div class="grupo-opcao">
+                <label class="opcao-item"><input type="checkbox" name="destaques" value="atendimento"> Atendimento</label>
+                <label class="opcao-item"><input type="checkbox" name="destaques" value="qualidade"> Qualidade</label>
+                <label class="opcao-item"><input type="checkbox" name="destaques" value="preco"> Preço</label>
+                <label class="opcao-item"><input type="checkbox" name="destaques" value="ambiente"> Ambiente</label>
+            </div>
+        </div>
+
+        <!-- Campo de Opinião -->
+        <div class="campo">
+            <label for="opiniao">Deixe sua opinião ou sugestão:</label>
+            <textarea id="opiniao" name="opiniao" placeholder="Escreva aqui..."></textarea>
+        </div>
+
+        <!-- Botões -->
+        <div class="botoes">
+            <button type="submit">Enviar pesquisa</button>
+            <button type="reset">Limpar</button>
+        </div>
+    </form>
+
+
+</body>
+
+</html>
