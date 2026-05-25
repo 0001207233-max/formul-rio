@@ -1,0 +1,106 @@
+        /* Define fontes, cores de fundo modernas e centraliza o conteúdo global */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, black 0%, gray 100%);
+        }
+
+        /* Container do formulário com sombra suave, bordas arredondadas e fundo branco */
+        .login-container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            width: 350px;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 24px;
+            color: #333333;
+        }
+
+        /* Estrutura os grupos de campos */
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            color: #666666;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        /* Estiliza as caixas de entrada de texto e senha */
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #cccccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 14px;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            border-color: #764ba2;
+            outline: none;
+        }
+
+        /* Alinha o checkbox e o link de esqueci a senha lado a lado */
+        .options-group {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+            font-size: 13px;
+        }
+
+        .remember-me {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            color: #555555;
+        }
+
+        .remember-me input {
+            margin-right: 6px;
+            cursor: pointer;
+        }
+
+        .forgot-password {
+            color: #764ba2;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+
+        /* Estiliza o botão de envio principal */
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: gray;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: black;
+        }
