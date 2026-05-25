@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="login-container">
+        <h2>Acessar Conta</h2>
+
+        <form action="insere.php" method="POST">
+            <div class="input-group">
+                <label for="usuario">Usuário ou E-mail</label>
+                <input type="text" id="usuario" name="usuario" placeholder="Digite seu usuário" required>
+            </div>
+
+            <div class="input-group">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+            </div>
+
+            <div class="options-group">
+                <label class="remember-me">
+                    <input type="checkbox" id="lembrar" name="lembrar">
+                    Lembrar senha
+                </label>
+                <a href="#" class="forgot-password">Esqueci minha senha</a>
+            </div>
+
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
